@@ -3,7 +3,11 @@ import Keywords from './Keywords'
 
 import Timeline from './Timeline'
 
-const ExperienceSectionWrapper = styled.section``
+const ExperienceSectionWrapper = styled.section`
+    @media print {
+        break-inside: avoid;
+    }
+`
 
 const ExperienceSection = ({
     sectionTitle,

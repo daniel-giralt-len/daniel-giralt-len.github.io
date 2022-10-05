@@ -17,7 +17,7 @@
         ]
     },
     {
-        "sectionTitle": "Architecture Deploymen + Monitoring",
+        "sectionTitle": "Architecture Deployment + Monitoring",
         "keywords": ["Grafana", "Bosun", "Kibana", "CloudFormation", "S3", "Lambda", "Travis", "Jenkins"],
         "timeline": [
             { "company": "Skyscanner", "time": "2019-2021", "description": "Deployed and monitored health of services world-wide. Researched logs and metrics to solve production bugs. Contributed to on-call runbook." },
