@@ -10,6 +10,9 @@ import Title from "./Components/Title";
 const GlobalStyle = createGlobalStyle`
   html {
     font-family: 'Montserrat', sans-serif;
+    @media print {
+      font-size: 0.75em;
+    }
   }
 `
 
