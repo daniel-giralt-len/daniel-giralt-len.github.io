@@ -1,6 +1,11 @@
 import styled from 'styled-components'
 
-const TimelineWrapper = styled.ol``
+const TimelineWrapper = styled.ol`
+    padding: 0;
+    list-style-type: disc;
+    border-left: 1px solid black;
+    padding-left: 0.9em;
+`
 
 const TimelineItem = ({
     company,
