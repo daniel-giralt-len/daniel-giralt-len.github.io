@@ -28,9 +28,9 @@ const App = () => {
       <CenteredWrapper>
         <main>
             <Title>Daniel Giralt Len</Title>
-            <JobDescription>Full stack web developer (+ data engineer and QA)</JobDescription>
+            <JobDescription>Mid Full stack developer (& data engineer)</JobDescription>
             <ExperienceList>
-              {experienceSections.map(ExperienceSection)}
+              {experienceSections.map(section => <ExperienceSection key={section.sectionTitle} {...section} />)}
             </ExperienceList>
         </main>
         </CenteredWrapper>
