@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import Keywords from './Keywords'
 
 import Timeline from './Timeline'
 
@@ -12,7 +13,7 @@ const ExperienceSection = ({
 }) => (
     <ExperienceSectionWrapper>
         <h3>{sectionTitle}</h3>
-        {JSON.stringify(keywords)}
+        {keywords && <Keywords list={keywords} />}
         {summary && (<p>{summary}</p>)}
         {timeline && (<Timeline timeline={timeline} />)}
     </ExperienceSectionWrapper>
