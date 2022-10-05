@@ -13,6 +13,18 @@ const DateWrapper = styled.div`
     margin-right: 0.5em;
 `
 
+const CompanyWrapper = styled.h5`
+    display: inline-block;
+    margin: 0;
+    font-size: 1.1em;
+    margin: 0.4em 0;
+`
+
+const DescriptionWrapper = styled.div`
+    text-indent: 1em;
+    margin-left: 0.5em;
+`
+
 const TimelineItem = ({
     company,
     time,
@@ -21,12 +33,14 @@ const TimelineItem = ({
 }) => (
     <li>
         {time && <DateWrapper>({time})</DateWrapper>}
-        {   
-            link 
-            ? (<a href={link}>{company}</a>)
-            : (<span>{company}</span>)
-        }
-        <div>{description}</div>
+        <CompanyWrapper>
+            {   
+                link 
+                ? (<a href={link}>{company}</a>)
+                : company
+            }
+        </CompanyWrapper>
+        <DescriptionWrapper>{description}</DescriptionWrapper>
     </li>
 )
 
