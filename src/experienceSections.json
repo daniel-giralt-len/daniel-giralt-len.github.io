@@ -1,23 +1,62 @@
 [
     {
-        "sectionTitle": "Frontend"
+        "sectionTitle": "Frontend",
+        "keywords": ["React", "Webpack", "CSS"],
+        "timeline": [
+            { "company": "Skyscanner", "time": "2018-2019", "description": "Updated legacy single page application. Lead redesign of a user review page in team." },
+            { "company": "Typeform", "time": "2019-2019", "description": "Developed form-submitting single page applications. Contributed to design systems. Help design contracts between backend and frontend." },
+            { "company": "GTI", "time": "2013-2014", "description": "Developed webpages to gather research group information. Released old-form mobile apps." }
+        ]
     },
     {
-        "sectionTitle": "Backend"
+        "sectionTitle": "Backend",
+        "keywords": ["Docker", "Node", "MongoDB", "AWS", "MySQL", "Redis"],
+        "timeline": [
+            { "company": "Skyscanner", "time": "2019-2022", "description": "Maintained ads management infrastructure. Developed node applications to serve ad data in near real time. Designed new databases. Orchestrated AWS services along with in-house services." },
+            { "company": "GTI", "time": "2013-2014", "description": "Maintained and improved in-house C++ & Redis system for the 2014 Barcelona World Race." }
+        ]
     },
     {
-        "sectionTitle": "Architecture (Deploy+Monitor)"
+        "sectionTitle": "Architecture Deploymen + Monitoring",
+        "keywords": ["Grafana", "Bosun", "Kibana", "CloudFormation", "S3", "Lambda", "Travis", "Jenkins"],
+        "timeline": [
+            { "company": "Skyscanner", "time": "2019-2021", "description": "Deployed and monitored health of services world-wide. Researched logs and metrics to solve production bugs. Contributed to on-call runbook." },
+            { "company": "Typeform", "time": "2017-2019", "description": "Used CI + CD technologies to deploy Frontend and Backend microservices. Fixed CI + CD manifestos when releases got more complex." }
+        ]
+        
     },
     {
-        "sectionTitle": "Data Engineering"
+        "sectionTitle": "Data Engineering",
+        "keywords": ["PySpark", "Airflow/Dagger", "Databricks"],
+        "timeline": [
+            { "company": "Skyscanner", "time": "2021-2022", "description": "Learned and contributed to data flow of ads interaction. Designed new dataframes to create ad expenses reports and to improve ad manager monitoring. Built and maintained the daily pipeline of the scripts." }
+        ]
     },
     {
-        "sectionTitle": "Soft skills"
+        "sectionTitle": "Soft skills",
+        "summary": "Learned how to work in cross-functional teams with Scrum and/or Agile development. Contributed to TDD and/or BDD, and when to use each. Learned how to use team workload managers (Jira, Confluence).",
+        "timeline": [
+            { "company": "Skyscanner", "time": "2019-2022"},
+            { "company": "Typeform", "time": "2017-2019"},
+            { "company": "Netcentric", "time": "2014-2016" }
+        ]
     },
     {
-        "sectionTitle": "Video Games + Personal"
+        "sectionTitle": "Video Games + Personal",
+        "keywords": ["Unreal Engine 5", "Lua", "Pico8", "Javascript"],
+        "timeline": [
+            { "company": "Github", "link": "https://github.com/daniel-giralt-len", "description": "Webpage projects such as an interactive 3.5 DnD character sheet builder" },
+            { "company": "Itch.io", "link": "https://ironygames.itch.io/", "description": "Indie scale games and projects for game jams like Ludum Dare." },
+            { "company": "Twitter", "link": "https://twitter.com/IronyDaniel/status/1297592762276159490", "description": "Procedural image generation and graphics' snippets" },
+            { "company": "Udemy", "description": "Courses to learn Unreal Engine 5 and triple A game development." }
+        ]
     },
     {
-        "sectionTitle": "QA + Others"
+        "sectionTitle": "QA + Others",
+        "keywords": ["QA Automation", "Ruby", "Gherkins", "Cucumber", "Manual QA"],
+        "timeline": [
+            { "company": "Typeform", "time": "2017-2018", "description": "Write QA automated tests and added them to the development pipeline (CI). Designed meta-testing systems (automated webpage screenshotting across browsers to spot differences)." },
+            { "company": "Netcentric", "time": "2014-2016", "description": "Reviewed and contributed to business requirements, writing tests suites and cases. Coordinated team releases, bug reports, and introduced test automation." }
+        ]
     }
 ]
