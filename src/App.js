@@ -22,6 +22,12 @@ const CVWrapper = styled.main`
   max-width: 65em;
 `
 
+const Footer = styled.footer`
+  text-align: center;
+  font-size: 0.75em;
+  margin-top: 0.5em;
+`
+
 const App = () => {
   return (
     <>
@@ -36,6 +42,7 @@ const App = () => {
             <ExperienceList>
               {experienceSections.map(section => <ExperienceSection key={section.sectionTitle} {...section} />)}
             </ExperienceList>
+          <Footer>Designed as a React webpage.</Footer>
         </CVWrapper>
       </CenteredWrapper>
     </>
