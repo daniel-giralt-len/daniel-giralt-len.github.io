@@ -7,6 +7,12 @@ const TimelineWrapper = styled.ol`
     padding-left: 0.9em;
 `
 
+const DateWrapper = styled.div`
+    font-size: 0.75em;
+    display: inline;
+    margin-right: 0.5em;
+`
+
 const TimelineItem = ({
     company,
     time,
@@ -14,13 +20,12 @@ const TimelineItem = ({
     link,
 }) => (
     <li>
+        {time && <DateWrapper>({time})</DateWrapper>}
         {   
             link 
             ? (<a href={link}>{company}</a>)
-            : (<div>{company}</div>)
+            : (<span>{company}</span>)
         }
-        <div>{company}</div>
-        <div>{time}</div>
         <div>{description}</div>
     </li>
 )
