@@ -1,7 +1,11 @@
 import styled, { createGlobalStyle } from 'styled-components'
-import Title from "./Components/Title";
-import JobDescription from "./Components/JobDescription";
+
+import experienceSections from './experienceSections.json'
+
 import ExperienceList from "./Components/ExperienceList";
+import ExperienceSection from './Components/ExperienceSection';
+import JobDescription from "./Components/JobDescription";
+import Title from "./Components/Title";
 
 const GlobalStyle = createGlobalStyle`
   html {
@@ -26,13 +30,7 @@ const App = () => {
             <Title>Daniel Giralt Len</Title>
             <JobDescription>Full stack web developer (+ data engineer and QA)</JobDescription>
             <ExperienceList>
-              <section>Frontend</section>
-              <section>Backend</section>
-              <section>Architecture (Deploy+Monitor)</section>
-              <section>Data Engineering</section>
-              <section>Soft skills</section>
-              <section>Video Games + Personal</section>
-              <section>QA + Others</section>
+              {experienceSections.map(ExperienceSection)}
             </ExperienceList>
         </main>
         </CenteredWrapper>
