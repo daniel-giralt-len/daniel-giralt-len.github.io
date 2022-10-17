@@ -23,6 +23,15 @@ const DescriptionWrapper = styled.div`
     margin-left: 1.5em;
 `
 
+const PrintFriendlyAnchor = styled.a`
+    @media print {
+        &:link, &:visited {
+            text-decoration: inherit;
+            color: inherit;
+        }
+    }
+`
+
 const TimelineItem = ({
     company,
     time,
@@ -35,7 +44,7 @@ const TimelineItem = ({
         <CompanyWrapper>
             {   
                 link 
-                ? (<a href={link}>{company}</a>)
+                ? (<PrintFriendlyAnchor href={link}>{company}</PrintFriendlyAnchor>)
                 : company
             }
         </CompanyWrapper>
