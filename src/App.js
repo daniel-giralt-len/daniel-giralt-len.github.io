@@ -5,6 +5,7 @@ import experienceSections from './experienceSections.json'
 import ExperienceList from "./Components/ExperienceList";
 import ExperienceSection from './Components/ExperienceSection';
 import JobDescription from "./Components/JobDescription";
+import PrintFriendlyAnchor from './Components/PrintFriendlyAnchor'
 import Title from "./Components/Title";
 
 const GlobalStyle = createGlobalStyle`
@@ -28,6 +29,15 @@ const GlobalStyle = createGlobalStyle`
   }
 `
 
+const TitleLine = styled.div`
+  display: flex;
+  justify-content: space-between;
+`
+
+const EmailWrapper = styled.h3`
+  display: flex;
+  align-items: flex-end;
+`
 
 const CenteredWrapper = styled.div`
   display: flex;
@@ -56,7 +66,13 @@ const App = () => {
       <GlobalStyle />
       <CenteredWrapper>
         <CVWrapper>
-            <Title>Daniel Giralt Len</Title>
+            <TitleLine>
+              <Title>Daniel Giralt Len</Title>
+              <EmailWrapper>
+                Email:
+                <PrintFriendlyAnchor href='daniel.giralt.len@gmail.com' underlined>daniel.giralt.len@gmail.com</PrintFriendlyAnchor>
+              </EmailWrapper>
+            </TitleLine>
             <JobDescription>Mid Full stack developer (& data engineer)</JobDescription>
             <ExperienceList>
               {experienceSections.map(section => <ExperienceSection key={section.sectionTitle} {...section} />)}

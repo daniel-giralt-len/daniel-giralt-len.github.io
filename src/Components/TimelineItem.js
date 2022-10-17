@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import PrintFriendlyAnchor from './PrintFriendlyAnchor'
 
 const DateWrapper = styled.div`
     font-size: 0.75em;
@@ -21,15 +22,6 @@ const CompanyWrapper = styled.h5`
 const DescriptionWrapper = styled.div`
     text-indent: 1em;
     margin-left: 1.5em;
-`
-
-const PrintFriendlyAnchor = styled.a`
-    @media print {
-        &:link, &:visited {
-            text-decoration: inherit;
-            color: inherit;
-        }
-    }
 `
 
 const TimelineItem = ({
