@@ -6,7 +6,6 @@ import ExperienceList from "./Components/ExperienceList";
 import ExperienceSection from './Components/ExperienceSection';
 import JobDescription from "./Components/JobDescription";
 import PrintFriendlyAnchor from './Components/PrintFriendlyAnchor'
-import Title from "./Components/Title";
 
 const GlobalStyle = createGlobalStyle`
   html {
@@ -28,6 +27,7 @@ const GlobalStyle = createGlobalStyle`
     }
   }
 `
+const Title = styled.h1``
 
 const TitleLine = styled.div`
   display: flex;
@@ -67,7 +67,7 @@ const App = () => {
       <CenteredWrapper>
         <CVWrapper>
             <TitleLine>
-              <Title>Daniel Giralt Len</Title>
+              <h1>Daniel Giralt Len</h1>
               <EmailWrapper>
                 Email:
                 <PrintFriendlyAnchor href='daniel.giralt.len@gmail.com' underlined>daniel.giralt.len@gmail.com</PrintFriendlyAnchor>
