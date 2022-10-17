@@ -9,6 +9,9 @@ const DateWrapper = styled.div`
 
 const TimelineItemWrapper = styled.li`
     margin-left: -11px;
+    @media print {
+        margin-bottom: 0.2em;
+    }
 `
 
 const CompanyWrapper = styled.h5`
