@@ -14,9 +14,10 @@ const ExperienceSection = ({
     summary,
     keywords,
     timeline,
+    years
 }) => (
     <ExperienceSectionWrapper>
-        <h3>{sectionTitle}</h3>
+        <h3>{sectionTitle} {years && `(${years} year${years>1 ? 's' : ''})`}</h3>
         {keywords && <Keywords list={keywords} />}
         {summary && (<p>{summary}</p>)}
         {timeline && (<Timeline timeline={timeline} />)}

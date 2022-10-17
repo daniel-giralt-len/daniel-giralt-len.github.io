@@ -39,7 +39,6 @@
     {
         "sectionTitle": "Soft skills",
         "summary": "Learned how to work in cross-functional teams with Scrum and/or Agile development. Contributed to TDD and/or BDD, and when to use each. Learned how to use team workload managers (Jira, Confluence). Also worked in Cascade style environments.",
-        "years": 8,
         "timeline": [
             { "company": "Skyscanner", "time": "2019-2022"},
             { "company": "Typeform", "time": "2017-2019"},
