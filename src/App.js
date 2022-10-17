@@ -13,8 +13,16 @@ const GlobalStyle = createGlobalStyle`
     @media print {
       font-size: 0.75em;
     }
+    body {
+      margin-top: 0;
+      -webkit-print-color-adjust: exact !important;
+      -webkit-print-color-adjust:exact !important;
+      print-color-adjust:exact !important;
+      background-color: #fff9f4;
+    }
   }
 `
+
 
 const CenteredWrapper = styled.div`
   display: flex;

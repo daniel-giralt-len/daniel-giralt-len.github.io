@@ -1,16 +1,22 @@
 import styled from 'styled-components'
 
 const TimelineWrapper = styled.ol`
+    list-style-type: none;
     padding: 0;
-    list-style-type: disc;
-    border-left: 1px solid black;
-    padding-left: 0.9em;
+    margin: 0;
+
+    border-left: 6px solid #f8e8b0;
+    
 `
 
 const DateWrapper = styled.div`
     font-size: 0.75em;
     display: inline;
-    margin-right: 0.5em;
+    margin-left: 0.5em;
+`
+
+const TimelineItemWrapper = styled.li`
+    margin-left: -11px;
 `
 
 const CompanyWrapper = styled.h5`
@@ -18,11 +24,12 @@ const CompanyWrapper = styled.h5`
     margin: 0;
     font-size: 1.1em;
     margin: 0.4em 0;
+    margin-left: 0.5em;
 `
 
 const DescriptionWrapper = styled.div`
     text-indent: 1em;
-    margin-left: 0.5em;
+    margin-left: 1.5em;
 `
 
 const TimelineItem = ({
@@ -31,7 +38,8 @@ const TimelineItem = ({
     description,
     link,
 }) => (
-    <li>
+    <TimelineItemWrapper>
+        <img src="timeline_dot.png" alt='list item bullet' />
         {time && <DateWrapper>({time})</DateWrapper>}
         <CompanyWrapper>
             {   
@@ -41,7 +49,7 @@ const TimelineItem = ({
             }
         </CompanyWrapper>
         <DescriptionWrapper>{description}</DescriptionWrapper>
-    </li>
+    </TimelineItemWrapper>
 )
 
 const Timeline = ({timeline}) => (
