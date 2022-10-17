@@ -15,6 +15,10 @@ const GlobalStyle = createGlobalStyle`
     }
     body {
       margin-top: 0;
+      padding: 0 1em;
+      @media print {
+        padding: 0;
+      }
       -webkit-print-color-adjust: exact !important;
       -webkit-print-color-adjust:exact !important;
       print-color-adjust:exact !important;
@@ -36,7 +40,10 @@ const CVWrapper = styled.main`
 const Footer = styled.footer`
   text-align: center;
   font-size: 0.75em;
-  margin-top: 0.5em;
+  margin-top: 3em;
+  @media print {
+    margin-top: 2em;
+  }
 `
 
 const App = () => {
